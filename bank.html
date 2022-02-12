@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>এখন তুমি যায়গা মত এসেছো</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-3/4 mx-auto mt-8">
+        <h1 class="text-5xl font-bold text-orange-400 text-center">স্বাগতম তোমাকে তোমার বাপের ব্যাংকে!!!</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <div class="grid grid-cols-3 cols-sm-1  gap-4 mx-auto mt-5">
+           <div class="bg-cyan-300 p-5">
+               <h1>Diposite</h1>
+               <h1 class="font-bold text-2xl">$<span id="new-diposite">00</span></h1>
+           </div>
+           <div class="bg-cyan-200 p-5">
+            <h1>Withdraw</h1>
+            <h1 class="font-bold text-2xl">$<span id="withdraw-now">00</span></h1>
+        </div> 
+           <div class="bg-cyan-400 p-5">
+               <h1>Balance</h1>
+               <h1 class="font-bold text-2xl">$<span id="balance-depo">10000000000</span></h1>
+           </div>  
+        </div>
+
+         <!-- wiyhdraw -->
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="bg-red-300 p-5 rounded">
+                    <h1 class="mb-3">Plass Diposit</h1>
+                    <input id="input-Diposit" class="w-3/4 mb-3 rounded block" type="email" name="" id="" placeholder="Plass Diposit Now">
+                    <button id="diposit-btn" class="bg-orange-200 px-5 py-2 font-bold text-red-600 rounded-md">Diposit</button>
+            </div>
+            <div class="bg-red-300 p-5 rounded">
+                    <h1 class="mb-3">Plass withdraw now</h1>
+                    <input id="input-withdraw" class="w-3/4 mb-3 rounded block" type="email" name="" id="" placeholder="Plass Diposit Now">
+                    <button id="withdraw-btn" class="bg-orange-200 px-5 py-2 font-bold text-red-600 rounded-md">Withdraw</button>
+
+            </div>
+        </div>
+    </main>
+    <script src="bank.js"></script>
+</body>
+</html>
